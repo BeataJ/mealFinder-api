@@ -59,6 +59,14 @@ input[type="text"] {
   margin-top: 20px;
 }
 
+.meal {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+}
+
 @media(max-width: 800px) {}
 
 @media(max-width: 700px) {}
