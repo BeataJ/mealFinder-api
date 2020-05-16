@@ -84,8 +84,12 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity .2s easy-in;
+  transition: opacity .7s easy-in;
   opacity: 0;
+}
+
+.meal:hover .meal-info {
+  opacity: 1;
 }
 
 @media(max-width: 800px) {}
