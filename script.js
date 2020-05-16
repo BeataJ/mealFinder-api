@@ -41,7 +41,7 @@ const searchMeal = (e) => {
             .join('');
         }
       });
-    // clear search
+    // clear search text
     search.value = '';
   } else {
     alert('Please enter a search term');
