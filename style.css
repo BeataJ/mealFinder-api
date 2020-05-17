@@ -145,6 +145,11 @@ input[type="text"] {
   .meals {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .meal {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media(max-width: 500px) {
@@ -154,5 +159,10 @@ input[type="text"] {
 
   .meals {
     grid-template-columns: 1fr;
+  }
+
+  .meal {
+    height: 300px;
+    width: 300px;
   }
 }
