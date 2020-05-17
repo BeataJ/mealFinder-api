@@ -94,6 +94,8 @@ function addMealToDOM(meal) {
 
 // Event Listener
 submit.addEventListener('submit', searchMeal);
+random.addEventListener('click', randomMeal);
+
 mealsEl.addEventListener('click', (e) => {
   const mealInfo = e.path.find((item) => {
     if (item.classList) {
