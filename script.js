@@ -54,9 +54,24 @@ function getMealById(mealID) {
     .then((res) => res.json())
     .then((data) => {
       const meal = data.meals[0];
+      console.log(data);
 
       addMealToDOM(meal);
     });
+}
+
+function addMealToDOM(meal) {
+  const ingredients = [];
+
+  for (let i = 1; i <= 20; i++) {
+    if (meal[`strIngredient${i}`]) {
+      ingredients.push(
+        `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
+      );
+    } else {
+      break;
+    }
+  }
 }
 
 // Event Listener
